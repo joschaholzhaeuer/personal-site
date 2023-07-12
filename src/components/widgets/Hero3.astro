@@ -1,0 +1,120 @@
+---
+import { Icon } from 'astro-icon';
+import { Picture } from '@astrojs/image/components';
+
+interface CallToAction {
+  text: string;
+  href: string;
+  icon?: string;
+}
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  content?: string;
+  socialLinks: Array<Link>;
+  callToAction?: string | CallToAction;
+  callToAction2?: string | CallToAction;
+  image?: string | any; // TODO: find HTMLElementProps
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  content = await Astro.slots.render('content'),
+  socialLinks = await Astro.slots.render('socialLinks'),
+  callToAction = await Astro.slots.render('callToAction'),
+  callToAction2 = await Astro.slots.render('callToAction2'),
+} = Astro.props;
+---
+
+<section class="relative md:-mt-[76px] not-prose">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+    <div class="py-12 md:py-32 xl:py-40">
+      {
+        (title || subtitle) && (
+          <div class="mb-8 md:mx-auto text-center max-w-3xl">
+            {title && (
+              <h2
+                class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+                set:html={title}
+              />
+            )}
+
+            {subtitle && (
+              <p
+                class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-300"
+                set:html={subtitle}
+              />
+            )}
+          </div>
+        )
+      }
+      <div class="text-center pb-10 md:pb-16 max-w-screen-lg mx-auto">
+        <div class="max-w-3xl mx-auto">
+          <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap sm:flex-row justify-center gap-4">
+            {
+              socialLinks?.length ? (
+                <ul class="flex mb-4 md:mb-0">
+                  {socialLinks.map(({ ariaLabel, href, text, icon }) => (
+                    <li>
+                      <a
+                        class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                        aria-label={ariaLabel}
+                        href={href}
+                      >
+                        {icon && <Icon name={icon} class="w-12 h-12" />}
+                        <Fragment set:html={text} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                ''
+              )
+            }
+            {
+              callToAction && (
+                <div class="flex w-full sm:w-auto">
+                  {typeof callToAction === 'string' ? (
+                    <Fragment set:html={callToAction} />
+                  ) : (
+                    <a class="btn btn-primary sm:mb-0 w-full" href={callToAction?.href}>
+                      {callToAction?.icon && (
+                        <>
+                          <Icon name={callToAction.icon} class="w-5 h-5 mr-1 -ml-1.5" />&nbsp;
+                        </>
+                      )}
+                      {callToAction?.text}
+                    </a>
+                  )}
+                </div>
+              )
+            }
+            {
+              callToAction2 && (
+                <div class="flex w-full sm:w-auto">
+                  {typeof callToAction2 === 'string' ? (
+                    <Fragment set:html={callToAction2} />
+                  ) : (
+                    <a class="btn w-full" href={callToAction2?.href}>
+                      {callToAction2?.icon && (
+                        <>
+                          <Icon name={callToAction2.icon} class="w-5 h-5 mr-1 -ml-1.5" />&nbsp;
+                        </>
+                      )}
+                      {callToAction2.text}
+                    </a>
+                  )}
+                </div>
+              )
+            }
+          </div>
+        </div>
+        {content && <Fragment set:html={content} />}
+      </div>
+    </div>
+  </div>
+</section>
