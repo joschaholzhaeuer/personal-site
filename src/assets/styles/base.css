@@ -64,6 +64,10 @@
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
+.prose :where(strong):not(:where([class~="not-prose"] *)) {
+  color: var(--text-prose-body);
+}
+
 ::selection {
   @apply bg-slate-900 text-white;
 }

@@ -23,107 +23,24 @@ const meta = {
 ---
 
 <Layout {meta}>
-  <!-- Hero Widget ******************* -->
-
-  <!-- Stats Widget ****************** -->
-
-  <!-- <Stats
-    items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
-    ]}
-  /> -->
-
-  <!-- <Hero
-    callToAction={{ text: 'Mehr über mich erfahren', href: '/ueber-mich' }}
-    image={{ src: import('~/assets/images/joscha-portrait-3.jpg'), alt: 'Portrait von Joscha' }}
-  >
-    <Fragment slot="title">
-      Hi, ich bin <span class="text-accent dark:text-white highlight"> Joscha</span>!
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span>
-        Webentwickler aus Karlsruhe mit 7 Jahren Erfahrung als Freelancer sowie als Mitgründer und CTO einer <a href="https://dreiqbik.de" class="text-primary hover:underline" target="_blank" rel="noopener">WordPress Agentur</a>.
-        Freund von schnellen Ladezeiten und starker UX. Glücklicher Papa. Liebhaber von gutem selbstgebackenen Brot.</span
-      >
-    </Fragment>
-  </Hero> -->
-
-  <!-- Note Widget ******************* -->
-
-  <!-- <Note /> -->
-
-  <!-- Features Widget *************** -->
-
-  <!-- <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
-    items={[
-      [
-        {
-          title: 'Astro + Tailwind CSS Integration',
-          description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
-        },
-        {
-          title: 'Ready-to-use Components',
-          description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
-        },
-        {
-          title: 'Best Practices',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
-        },
-      ],
-      [
-        {
-          title: 'Excellent Page Speed',
-          description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
-        },
-        {
-          title: 'Search Engine Optimization (SEO)',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
-        },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
-        },
-      ],
-    ]}
-  /> -->
-
   <!-- Content Widget **************** -->
 
   <Content
-    highlight="Über mich"
-    title="Ein wenig über mich selbst"
+    title="Über mich"
+    subtitle="Hier gibt's ein wenig über mich selbst"
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Webentwickler aus Karlsruhe',
         description:
           'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: 'WordPress Enthusiast',
         description:
           'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'Zukunftspläne',
         description:
           'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
       },
@@ -133,52 +50,22 @@ const meta = {
       alt: 'Colorful Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
-    </Fragment>
+    <!-- <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Das bin ich</h3>
+      Ich bin Webentwickler aus Karlsruhe. Ich bin 31 Jahre alt und erstelle seit etwa 10 Jahren Websites - oder genau 749188197489 Millisekunden!
+      <br />
+      Ich verwende HTML, CSS, JavaScript und WordPress. Mein Schwerpunkt liegt derzeit auf WordPress, React.js, Serverless, Astro, auch wenn er sich ständig ändert.
+    </Fragment> -->
   </Content>
 
   <!-- Note Widget ******************* -->
 
   <Note />
 
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/vintage.jpg'),
-      alt: 'Vintage Image',
-    }}
-  /> -->
-
   <!-- Steps Widget ****************** -->
 
   <Steps3
-    title="Für die Zahlenliebhaber: Ein chronologischer Überblick"
+    title="Überblick"
     items={[
       {
         title: '1991-2011: <span class="font-medium">Aufgewachsen im Allgäu</span>',
@@ -216,106 +103,6 @@ const meta = {
       },
     ]}
   />
-
-
-  <!-- Features2 Widget ************** -->
-
-  <!-- <Features2
-    title="Projekte"
-    subtitle="Hier geht's zu ausgewählten Projekten der letzten Jahre"
-    items={[
-      {
-        title: 'Website Relaunch VI',
-        description:
-          'Website Relaunch mit detailgetreuer Umsetzung und Adaption des vorliegenden Desktop-Designs inkl. Intranet/Wiki für Virtual Identity AG.',
-        icon: 'tabler:app-window',
-      },
-      {
-        title: 'Interaktive Karte',
-        description:
-          'Programmierung und nahtlose Integration einer interaktiven Karte, auf der Mitglieder, Projekte und Events von 3H₂ übersichtlich dargestellt und gefiltert werden können.',
-        icon: 'tabler:pin',
-      },
-      {
-        title: 'Website Relaunch Y1',
-        description:
-          'Website Relaunch für Y1 Digital AG mit besonderer User Experience (Animationen, Custom Cursor, Konami Code).',
-        icon: 'tabler:app-window',
-      },
-      {
-        title: 'Stärkentest',
-        description:
-          'Entwicklung eines passwortgeschützten, mehrseitigen Formulars mit Likert-Skala zur persönlichen Stärken-/Schwächenanalyse zur Integration in bestehende Website.',
-        icon: 'tabler:barbell',
-      },
-      {
-        title: 'Browser Extension',
-        description:
-          'Übersichtliche Anzeige beliebig vieler Links zum schnellen Zugriff auf der Neue Tab-Seite im Chrome Browser. Individuelle Anpassungen von Icons, Farben und Theme.',
-        icon: 'tabler:puzzle',
-      },
-      {
-        title: 'Babynamen-App',
-        description:
-          'Spielerische Namenssuche für werdende Eltern mit Informationen zur Bedeutung und Herkunft.',
-        icon: 'tabler:signature',
-      },
-    ]}
-  /> -->
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <!-- <LatestPosts
-    title="Hier geht's zum Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  /> -->
-
-  <!-- FAQs Widget ******************* -->
-
-  <!-- <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
-    highlight="FAQs"
-    items={[
-      [
-        {
-          question: 'What do I need to start?',
-          answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-        },
-        {
-          question: 'How to install the Astro + Tailwind CSS template?',
-          answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
-        },
-        {
-          question: "What's something that you don't understand?",
-          answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-        },
-      ],
-      [
-        {
-          question: "What's an example of when you changed your mind?",
-          answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-        },
-        {
-          question: 'What is something that you would like to try again?',
-          answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-        },
-        {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
-          answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-        },
-      ],
-    ]}
-  /> -->
 
   <!-- CallToAction Widget *********** -->
 

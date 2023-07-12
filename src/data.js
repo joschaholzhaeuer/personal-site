@@ -128,6 +128,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://bit.ly/jh-github-profile' },
   ],
   footNote: `
-    Made with 💓 by Joscha Holzhäuer | Based on <a href="https://github.com/onwidget/astrowind" target="_blank">Astrowind</a>.
+    &copy; ${new Date().getFullYear()} Joscha Holzhäuer | Based on <a href="https://github.com/onwidget/astrowind" target="_blank">Astrowind</a>.
   `,
 };
