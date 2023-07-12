@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Joscha Holzhäuer',
 
-  origin: 'https://bit.ly/jh-website',
-  basePathname: '/',
+  origin: 'https://joschaholzhaeuer.github.io',
+  basePathname: '/personal-site',
   trailingSlash: false,
 
   title: 'Joscha Holzhäuer | Webentwickler',
