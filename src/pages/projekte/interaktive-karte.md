@@ -5,10 +5,10 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 <div class="not-prose flex gap-6 mb-8">
   <figure class="flex ">
-    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/3h2-desktop.png" alt="3H₂ Screenshot Desktop">
+    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/3h2-desktop.jpg" alt="3H₂ Screenshot Desktop">
   </figure>
   <figure class="flex ">
-    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/3h2-mobile.png" alt="3H₂ Screenshot Mobile">
+    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/3h2-mobile.jpg" alt="3H₂ Screenshot Mobile">
   </figure>
 </div>
 

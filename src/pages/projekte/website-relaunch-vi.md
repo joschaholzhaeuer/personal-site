@@ -5,10 +5,10 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 <div class="not-prose flex gap-6 mb-8">
   <figure class="flex ">
-    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/vi-desktop.png" alt="VI Screenshot Desktop">
+    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/vi-desktop.jpg" alt="VI Screenshot Desktop">
   </figure>
   <figure class="flex ">
-    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/vi-mobile.png" alt="VI Screenshot Mobile">
+    <img class="rounded-xl border-4 border-slate-900 dark:border-white shadow-2xl" src="/personal-site/assets/vi-mobile.jpg" alt="VI Screenshot Mobile">
   </figure>
 </div>
 

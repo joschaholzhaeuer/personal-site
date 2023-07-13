@@ -19,12 +19,13 @@ const meta = {
 
   <Content
     title="Über mich"
-    subtitle="Hier gibt's ein wenig Info über meine Person"
-    content="<p class='mb-2'>Im Jahr 2012 begann ich mein Studium in OnlineMedien in Furtwangen im tiefen Schwarzwald und tauchte ein in die Welt der Webentwicklung. Ich traf tolle Menschen, die zu Wegbegleitern wurden und startete nach dem Studium gemeinsam mit Lennart und Moritz ein Freelance-Business.</p><p class='mb-2'>Nach zwei Jahren gründeten wir 2018 die dreiQBIK GmbH mit dem Ziel, eine schlanke und agile WordPress-Agentur aufzubauen. Bis heute habe ich als Verantwortlicher in der Entwicklung unzählige Projekte umgesetzt, wertschätzende Kund:innen begleitet und eine Menge gelernt — sei es im Bereich Marketing, Akquise, Projektmanagement, Design oder Buchhaltung und Finanzplanung.</p><p class='mb-2'>Dieses Jahr schließt sich dieses Kapitel und ich bin auf der Suche nach einer neuen Herausforderung — gespannt auf ein neues Umfeld, neue Aufgaben und neue Erfahrungen.</p><p class='mb-2'>In meiner Freizeit züchte ich meinen Sauerteig, verbringe Zeit mit meiner Frau und meinen zwei Kindern oder arbeite und entspanne in unserem Garten.</p>"
+    subtitle="Infos zu meiner Person"
+    content="<p class='mb-2'>Im Jahr 2012 begann ich mein Studium der OnlineMedien an der HFU Furtwangen im Schwarzwald und tauchte ein in die Welt der Webentwicklung. Ich traf tolle Menschen, die zu Wegbegleitern wurden und startete nach dem Studium gemeinsam mit meinen Kommilitonen Lennart und Moritz ein Freelance-Business.</p><p class='mb-2'>Zwei Jahre später gründeten wir 2018 die dreiQBIK GmbH mit dem Ziel, eine schlanke und agile WordPress-Agentur aufzubauen. Bis heute habe ich als Verantwortlicher in der Entwicklung unzählige Projekte umgesetzt, wertschätzende Kund:innen begleitet und eine Menge gelernt — sei es im Bereich Marketing, Akquise, Projektmanagement, Design oder Finanzplanung und Buchhaltung.</p><p class='mb-2'>Dieses Jahr schließt sich nun dieses Kapitel und ich bin auf der Suche nach einer neuen Herausforderung — gespannt auf ein neues Umfeld, neue Aufgaben und neue Erfahrungen.</p><p class='mb-2'>In meiner Freizeit züchte ich meinen Sauerteig, arbeite im Garten oder verbringe einfach Zeit mit meiner Frau und unseren beiden Kindern.</p>"
     image={{
       src: import('~/assets/images/joscha-portrait-3.jpg'),
       alt: 'Joscha vor seinem Bürogebäude',
     }}
+    isReversed={true}
   >
     <!-- <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Das bin ich</h3>
@@ -58,7 +59,7 @@ const meta = {
       {
         title: '2012-2016: <span class="font-medium">Studium in Furtwangen</span>',
         description:
-          'Das Studium in OnlineMedien hat mein Interesse für die Webentwicklung geweckt.',
+          'Das Studium der OnlineMedien hat mein Interesse für die Webentwicklung geweckt.',
         icon: 'tabler:school',
       },
       {
@@ -82,7 +83,7 @@ const meta = {
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!-- <CallToAction
     callToAction={{
       text: 'Kontakt aufnehmen',
       href: '/personal-site/kontakt',
@@ -95,5 +96,5 @@ const meta = {
     <Fragment slot="subtitle">
       Ich bin aktuell auf der Suche nach einem interessanten und herausfordernden Job als Webentwickler in Karlsruhe oder Umgebung.
     </Fragment>
-  </CallToAction>
+  </CallToAction> -->
 </Layout>
