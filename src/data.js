@@ -3,27 +3,6 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     // {
-    //   text: 'Landing',
-    //   links: [
-    //     {
-    //       text: 'Über mich',
-    //       href: getPermalink('/landing/saas'),
-    //     },
-    //     {
-    //       text: 'Projekte',
-    //       href: getPermalink('/landing/startup'),
-    //     },
-    //     {
-    //       text: 'Blog',
-    //       href: getPermalink('/landing/mobile-app'),
-    //     },
-    //     {
-    //       text: 'Kontakt',
-    //       href: getPermalink('/landing/mobile-app'),
-    //     },
-    //   ],
-    // },
-    // {
     //   text: 'Pages',
     //   links: [
     //     {

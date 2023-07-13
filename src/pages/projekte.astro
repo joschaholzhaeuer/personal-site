@@ -2,18 +2,7 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
-import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
   title: 'Projekte - ' + SITE.title,
@@ -73,22 +62,4 @@ const meta = {
       },
     ]}
   />
-
-  <!-- CallToAction Widget *********** -->
-
-  <!-- <CallToAction
-  callToAction={{
-    text: 'Kontakt aufnehmen',
-    href: '/kontakt',
-    icon: 'tabler:mail',
-  }}
->
-  <Fragment slot="title">
-    Interesse an einer <br class="block" /><span class="sm:whitespace-nowrap">Zusammenarbeit?</span>
-  </Fragment>
-
-  <Fragment slot="subtitle">
-    Ich bin aktuell auf der Suche nach einem interessanten und herausfordernden Job als Webentwickler in Karlsruhe oder Umgebung.
-  </Fragment>
-</CallToAction> -->
 </Layout>

@@ -2,17 +2,9 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Steps3 from '~/components/widgets/Steps3.astro';
 import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
@@ -27,27 +19,11 @@ const meta = {
 
   <Content
     title="Über mich"
-    subtitle="Hier gibt's ein wenig über mich selbst"
-    items={[
-      {
-        title: 'Webentwickler aus Karlsruhe',
-        description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
-      },
-      {
-        title: 'WordPress Enthusiast',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-      },
-      {
-        title: 'Zukunftspläne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-      },
-    ]}
+    subtitle="Hier gibt's ein wenig Info über meine Person"
+    content="<p class='mb-2'>Im Jahr 2012 begann ich mein Studium in OnlineMedien in Furtwangen im tiefen Schwarzwald und tauchte ein in die Welt der Webentwicklung. Ich traf tolle Menschen, die zu Wegbegleitern wurden und startete nach dem Studium gemeinsam mit Lennart und Moritz ein Freelance-Business.</p><p class='mb-2'>Nach zwei Jahren gründeten wir 2018 die dreiQBIK GmbH mit dem Ziel, eine schlanke und agile WordPress-Agentur aufzubauen. Bis heute habe ich als Verantwortlicher in der Entwicklung unzählige Projekte umgesetzt, wertschätzende Kund:innen begleitet und eine Menge gelernt — sei es im Bereich Marketing, Akquise, Projektmanagement, Design oder Buchhaltung und Finanzplanung.</p><p class='mb-2'>Dieses Jahr schließt sich dieses Kapitel und ich bin auf der Suche nach einer neuen Herausforderung — gespannt auf ein neues Umfeld, neue Aufgaben und neue Erfahrungen.</p><p class='mb-2'>In meiner Freizeit züchte ich meinen Sauerteig, verbringe Zeit mit meiner Frau und meinen zwei Kindern oder arbeite und entspanne in unserem Garten.</p>"
     image={{
       src: import('~/assets/images/joscha-portrait-3.jpg'),
-      alt: 'Colorful Image',
+      alt: 'Joscha vor seinem Bürogebäude',
     }}
   >
     <!-- <Fragment slot="content">
@@ -70,32 +46,32 @@ const meta = {
       {
         title: '1991-2011: <span class="font-medium">Aufgewachsen im Allgäu</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
+          'Meine Kindheit und Jugend habe ich im schönen Wangen im Allgäu verbracht — die Alpen und der Bodensee nur einen Sprung entfernt.',
+        icon: 'tabler:mountain',
       },
       {
-        title: '2011-2012: <span class="font-medium">Unterwegs in Afrika</em>',
+        title: '2011-2012: <span class="font-medium">Unterwegs in Ostafrika</em>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
+          'Nach dem Abitur habe ich ein Jahr als Lehrer einer weiterführenden Schule in Uganda verbracht.',
+        icon: 'tabler:plane-departure',
       },
       {
         title: '2012-2016: <span class="font-medium">Studium in Furtwangen</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
+          'Das Studium in OnlineMedien hat mein Interesse für die Webentwicklung geweckt.',
+        icon: 'tabler:school',
       },
       {
         title: '2016-2018: <span class="font-medium">Start in die Selbständigkeit</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
+          'Zu dritt haben wir als Freelancer für verschiedene Kund:innen remote und vor Ort gearbeitet und viele wertvolle Einblicke und Erfahrungen gesammelt.',
+        icon: 'tabler:run',
       },
       {
         title: '2018-heute: <span class="font-medium">Mitgründer einer WordPress Agentur</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
+          'Als kleine Agentur (mit wenig Erfahrung zu Beginn) haben wir verschiedene Wege eingeschlagen, viel gelernt und tolle Menschen und Unternehmen auf ihrem Weg begleitet.',
+        icon: 'tabler:building',
       },
       {
         title: 'Bereit für etwas Neues!',
@@ -109,8 +85,7 @@ const meta = {
   <CallToAction
     callToAction={{
       text: 'Kontakt aufnehmen',
-      href: '/kontakt',
-      icon: 'tabler:mail',
+      href: '/personal-site/kontakt',
     }}
   >
     <Fragment slot="title">
