@@ -31,22 +31,22 @@ export const headerData = {
     //     },
     //   ],
     // },
-    {
-      text: 'Über mich',
-      href: getPermalink('/ueber-mich'),
-    },
-    {
-      text: 'Projekte',
-      href: getPermalink('/projekte'),
-    },
+    // {
+    //   text: 'Über mich',
+    //   href: getPermalink('/ueber-mich'),
+    // },
+    // {
+    //   text: 'Projekte',
+    //   href: getPermalink('/projekte'),
+    // },
     // {
     //   text: 'Blog',
     //   href: getBlogPermalink(),
     // },
-    {
-      text: 'Kontakt',
-      href: getPermalink('/kontakt'),
-    },
+    // {
+    //   text: 'Kontakt',
+    //   href: getPermalink('/kontakt'),
+    // },
   ],
   // actions: [{ type: 'button', text: 'Download CV', href: 'https://github.com/onwidget/astrowind' }],
 };
@@ -107,6 +107,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://bit.ly/jh-github-profile' },
   ],
   footNote: `
-    &copy; ${new Date().getFullYear()} Joscha Holzhäuer | Based on <a href="https://github.com/onwidget/astrowind" target="_blank">Astrowind</a>.
+    &copy; ${new Date().getFullYear()} Joscha Holzhäuer
   `,
 };

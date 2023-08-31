@@ -32,8 +32,8 @@ const {
   image: _image = defaultImage,
 
   canonical = getCanonical(String(Astro.url.pathname)),
-  noindex = false,
-  nofollow = false,
+  noindex = true,
+  nofollow = true,
 
   ogTitle = title,
   ogType = 'website',
